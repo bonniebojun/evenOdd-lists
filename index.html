@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="main.js"></script>
+    <link href="main.css" rel="stylesheet">
+    <title>Even Odd Lists</title>
+   
+</head>
+<body>
+    <h1>even odd list</h1>
+    <hr/>
+    <form id="even-odd-from" autocomplete="off">
+        <div>
+            <label for ="word">word</label>
+            <input type="text" name="word" id="word" placeholder="What's your word?" onchange="updateWord(this.value)">
+        </div>
+        <div> 
+            <input type="button" value="Even or Odd?" onclick="handleSubmit()">
+        </div>
+    </form>
+    <section>
+        <h2>Even</h2>
+        <ul id="even"></ul>
+        </section>
+        <h2>odd</h2>
+        <ul id="odd"></ul>
+    </section>
+
+</body>
+</html>
