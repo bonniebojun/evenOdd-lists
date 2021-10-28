@@ -30,5 +30,5 @@ function handleSubmit() {
   }
 
   usersWord = ""
-  document.getElementById("Even or Odd?")
+  document.getElementById("Even or Odd?").reset()
 }
