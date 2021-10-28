@@ -1,6 +1,5 @@
-let usersWord = ""
-let oddList = document.getElementById("odd")
-let evenList = document.getElementById("even")
+let usersWord = "usersWord.length"
+
 
 function updateWord(element) {
   usersWord = element
@@ -10,19 +9,26 @@ function updateWord(element) {
 
 
 function handleSubmit() {
-  updateWord()
+  // updateWord()
+  let usersWord = document.getElementById("Word")
+
+  let oddList = document.getElementById("odd")
+  let evenList = document.getElementById("even")
+
   let newListItem = document.createElement('li')
+  console.log(newListItem)
   newListItem.innerText = usersWord
-  console.log(usersWord)
+  console.log('userword')
+  
   /* compare remainder to 0 to see if even or not */
-  if(usersWord.length % 2 === 0) {
-      /*put word in even lists*/
-      evenList.appendChild(newListItem)
-    } else {
-      /*put word in odd list*/
-      oddList.appendChild(newListItem)
-      }
+  if (usersWord % 2 === 0) {
+    /*put word in even lists*/
+    evenList.appendChild(newListItem)
+  } else {
+    /*put word in odd list*/
+    oddList.appendChild(newListItem)
+  }
 
   usersWord = ""
-  document.getElementById("even-odd-form").reset()
+  document.getElementById("Even or Odd?")
 }

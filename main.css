@@ -41,13 +41,13 @@
     text-align: center;
   }
   
-  /* 
+  
   264653 - teal
   299D8F - 🍏 
   E9C46B - 💛 
   F3A261 - 📙 
   E76F51 - 🧡 
-   */
+
   
    #myInput {
     background-image: url('/css/searchicon.png'); /* Add a search icon to input */
@@ -58,7 +58,7 @@
     padding: 12px 20px 12px 40px; /* Add some padding */
     border: 1px solid #ddd; /* Add a grey border */
     margin-bottom: 12px; /* Add some space below the input */
-  }
+
   
   /* #myUL  */
   
@@ -116,4 +116,4 @@
   
   li {
     border: solid 1px #299D8F;
-  } */
+  }
