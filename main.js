@@ -21,7 +21,7 @@ function handleSubmit() {
   console.log('usersword')
   
   /* compare remainder to 0 to see if even or not */
-  if(usersWord % 2 === 0) {
+  if(usersWord.length % 2 === 0) {
     /*put word in even lists*/
     evenList.appendChild(newListItem)
   } else {
